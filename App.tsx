@@ -5,12 +5,12 @@ import AppLoading from 'expo-app-loading';
 
 const getFonts = () =>
   Font.loadAsync({
-    'poppins-regular': require('./src/assets/fonts/poppins/Poppins-Regular.ttf'),
-    'poppins-bold': require('./src/assets/fonts/poppins/Poppins-Bold.ttf'),
-    'poppins-thin': require('./src/assets/fonts/poppins/Poppins-Thin.ttf'),
-    'poppins-medium': require('./src/assets/fonts/poppins/Poppins-Medium.ttf'),
-    'poppins-light': require('./src/assets/fonts/poppins/Poppins-Light.ttf'),
-    'poppins-black': require('./src/assets/fonts/poppins/Poppins-Black.ttf'),
+    'poppins-regular': require('./assets/fonts/Poppins/Poppins-Regular.ttf'),
+    'poppins-bold': require('./assets/fonts/Poppins/Poppins-Bold.ttf'),
+    'poppins-thin': require('./assets/fonts/Poppins/Poppins-Thin.ttf'),
+    'poppins-medium': require('./assets/fonts/Poppins/Poppins-Medium.ttf'),
+    'poppins-light': require('./assets/fonts/Poppins/Poppins-Light.ttf'),
+    'poppins-black': require('./assets/fonts/Poppins/Poppins-Black.ttf'),
   });
 
 export default function App() {

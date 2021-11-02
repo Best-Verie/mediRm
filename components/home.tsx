@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
@@ -7,14 +6,13 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 export default function Home() {
   return (
     <View style={styles.container}>
-     {/* <Image source={require('./assets/icon.png')} /> */}
-     <Image
-        source={{ uri: `https://www.pixsy.com/wp-content/uploads/2021/04/ben-sweet-2LowviVHZ-E-unsplash-1.jpeg` }}
-      />
-        <Text style={{ fontFamily: 'Poppins' }}> 
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed et optio dolor temporibus repellendus repellat, blanditiis modi officiis quidem, quae alias necessitatibus. Nesciunt quos qui aspernatur mollitia nam perspiciatis molestias?
-        </Text>
-            <StatusBar style="auto" />
+         <Image source={require('./../assets/images/undraw_medical_care_movn.png')} style={{width:300, height:300}}/>
+         <Text style={{ fontFamily: 'Poppins-bold' }}> 
+          Your health caring partner
+         </Text>
+         <Text style={{fontFamily:'Poppins-light', textAlign:'center', margin:'2em'}}>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero modi sed temporibus quo? Animi assumenda praesentium et totam sed quis, tenetur rerum nulla necessitatibus architecto vitae voluptatem ut placeat sapiente.
+         </Text>
     </View>
   );
 }
@@ -26,9 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily:'Poppins'
+    fontFamily:'poppins-regular'
   },
-  headerImg:{
-    width:300,
-  }
+  
 });
