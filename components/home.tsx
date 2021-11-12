@@ -30,7 +30,7 @@ export default function Home() {
       <TouchableOpacity
           onPress={() => alert('Hello, You are logged in!')}
           style={styles.loginButton}>
-            <Text>Login</Text>
+            <Text style={{fontFamily: 'poppins-regular'}}>Login</Text>
         </TouchableOpacity>
       </View>
 
@@ -38,7 +38,7 @@ export default function Home() {
       <TouchableOpacity
           onPress={() => alert('Hello, You are logged in!')}
           style={styles.signUpButton}>
-            <Text>Sign Up</Text>
+            <Text style={{fontFamily: 'poppins-regular'}}>Sign Up</Text>
         </TouchableOpacity>
       </View>
       </View>
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     flex:1,
     flexDirection: 'row',
     justifyContent: 'center',
-    padding:10
+    padding:10,
 
   },
   authView:{
@@ -83,7 +83,8 @@ const styles = StyleSheet.create({
     width:'100px',
     borderRadius: 5,
     padding: 10,
-    border: '1px solid gray'
+    borderWidth: 1,
+    borderColor: '#848AFA',
   },
   signUpButton:{
     backgroundColor: '#FD8CA0',
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
     width:'100px',
     borderRadius: 5,
     padding: 10,
-    border: '1px solid gainsboro',
+    // border: '1px solid gainsboro',
     marginLeft: '10px'
   }
 
